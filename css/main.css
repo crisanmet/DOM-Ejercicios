@@ -114,3 +114,7 @@ img {
   min-height: 100vh;
   text-align: center;
 }
+
+#reloj h3 {
+  color: red;
+}
