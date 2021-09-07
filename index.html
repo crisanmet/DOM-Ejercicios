@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicios del DOM</title>
-  <!--Hamburger css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Mi css-->
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <header class="header">
-    <h1 class="header__titulo">Ejercicios del DOM</h1>
-  </header>
-  <button class="panel__btn hamburger hamburger--collapse" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  <aside class="panel">
-    <nav class="panel__menu">
-      <ul><li><a href="#seccion1">Reloj Digital y Alarma Sonora</a></li></ul>
-      <ul><li><a href="#seccion2">Sección 2</a></li></ul>
-      <ul><li><a href="#seccion3">Sección 3</a></li></ul>
-      <ul><li><a href="#seccion4">Sección 4</a></li></ul>
-      <ul><li><a href="#seccion5">Sección 5</a></li></ul>
-    </nav>
-  </aside>
-  <main>
-    <section id="seccion1" class="seccion">
-      <h2>Reloj Digital y Alarma Sonora</h2>
-      <div id="reloj">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios del DOM</title>
+    <!--Hamburger css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+      integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Mi css-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__titulo">Ejercicios del DOM</h1>
+    </header>
+    <button class="panel__btn hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+      <nav class="panel__menu">
+        <ul>
+          <li><a href="#seccion1">Reloj Digital y Alarma Sonora</a></li>
+        </ul>
+        <ul>
+          <li><a href="#seccion2">Eventos del teclado</a></li>
+        </ul>
+        <ul>
+          <li><a href="#seccion3">Sección 3</a></li>
+        </ul>
+        <ul>
+          <li><a href="#seccion4">Sección 4</a></li>
+        </ul>
+        <ul>
+          <li><a href="#seccion5">Sección 5</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section id="seccion1" class="seccion">
+        <h2>Reloj Digital y Alarma Sonora</h2>
+        <div id="reloj"></div>
         <div>
           <button id="activar-reloj">Iniciar Reloj</button>
           <button id="desactivar-reloj">Detener Reloj</button>
           <button id="activar-alarma">Iniciar Alarma</button>
           <button id="desactivar-alarma">Detener Alarma</button>
         </div>
-    </section>
-    <section id="seccion2" class="seccion">
-      <h2>sección 2</h2>
-    </section>
-    <section id="seccion3" class="seccion">
-      <h2>sección 3</h2>
-    </section>
-    <section id="seccion4" class="seccion">
-      <h2>sección 4</h2>
-    </section>
-    <section id="seccion5" class="seccion">
-      <h2>sección 5</h2>
-    </section>
-  </main>
-  <script src="js/index_dom.js" type="module"></script>
-</body>
+      </section>
+      <section id="seccion2" class="seccion">
+        <h2>Eventos del teclado</h2>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+      </section>
+      <section id="seccion3" class="seccion">
+        <h2>sección 3</h2>
+      </section>
+      <section id="seccion4" class="seccion">
+        <h2>sección 4</h2>
+      </section>
+      <section id="seccion5" class="seccion">
+        <h2>sección 5</h2>
+      </section>
+    </main>
+    <script src="js/index_dom.js" type="module"></script>
+  </body>
 </html>
