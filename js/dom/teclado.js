@@ -11,25 +11,37 @@ export function atajos(e) {
 export function moverPelota(e, ball, stage) {
   const $ball = d.querySelector(ball);
   const $stage = d.querySelector(stage);
-  console.log(e.keyCode);
-  console.log(e.key);
+  const $limitsBall = $ball.getBoundingClientRect();
+  const $limitsStage = $stage.getBoundingClientRect();
 
   switch (e.keyCode) {
     case 37:
-      x--;
+      if ($limitsBall.left > $limitsStage.left) {
+        e.preventDefault();
+        x--;
+      }
       break;
     case 38:
-      y--;
+      if ($limitsBall.top > $limitsStage.top) {
+        e.preventDefault();
+        y--;
+      }
       break;
     case 39:
-      x++;
+      if ($limitsBall.right < $limitsStage.right) {
+        e.preventDefault();
+        x++;
+      }
       break;
     case 40:
-      y++;
+      if ($limitsBall.bottom < $limitsStage.bottom) {
+        e.preventDefault();
+        y++;
+      }
       break;
 
     default:
       break;
   }
-  $ball.style.transform = `translate{${x * 10}px, ${y * 10}px}`;
+  $ball.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
 }
