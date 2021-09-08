@@ -4,6 +4,7 @@ import { atajos, moverPelota } from "./dom/teclado.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import scrollTopButton from "./dom/boton_scroll.js";
 import darkTheme from "./dom/tema_oscuro.js";
+import responsiveMedia from "./dom/objeto_responsive.js";
 
 const d = document;
 
@@ -13,6 +14,18 @@ d.addEventListener("DOMContentLoaded", (e) => {
   alarma("assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
   countdown("countdown", "Sep 08,2022 12:22:00", "BOOM!!");
   scrollTopButton(".scroll-top-btn");
+  responsiveMedia(
+    "youtube",
+    "(min-widht:1024px)",
+    "Contenido Movil",
+    "Contenido Escritorio"
+  );
+  responsiveMedia(
+    "gmaps",
+    "(min-widht:1024px)",
+    "Contenido Movil",
+    "Contenido Escritorio"
+  );
 });
 
 d.addEventListener("keydown", (e) => {
