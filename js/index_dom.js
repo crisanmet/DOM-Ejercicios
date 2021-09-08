@@ -3,6 +3,7 @@ import { relojDigital, alarma } from "./dom/reloj.js";
 import { atajos, moverPelota } from "./dom/teclado.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import scrollTopButton from "./dom/boton_scroll.js";
+import darkTheme from "./dom/tema_oscuro.js";
 
 const d = document;
 
@@ -18,3 +19,5 @@ d.addEventListener("keydown", (e) => {
   atajos(e);
   moverPelota(e, ".ball", ".stage");
 });
+
+darkTheme(".dark-theme-btn", "dark-mode");
