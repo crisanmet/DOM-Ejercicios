@@ -6,6 +6,7 @@ import scrollTopButton from "./dom/boton_scroll.js";
 import darkTheme from "./dom/tema_oscuro.js";
 import responsiveMedia from "./dom/objeto_responsive.js";
 import responsiveTester from "./dom/prueba_tester.js";
+import userDeviceInfo from "./dom/deteccion_dispositivos.js";
 
 const d = document;
 
@@ -28,6 +29,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.413946342771!2d-58.391855180224596!3d-34.60786619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1631200369155!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
   );
   responsiveTester("responsive-tester");
+  userDeviceInfo("user-device");
 });
 
 d.addEventListener("keydown", (e) => {
