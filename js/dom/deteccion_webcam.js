@@ -10,13 +10,10 @@ export default function webCam(id) {
       .getUserMedia({ video: true, audio: false })
       .then((stream) => {
         $video.srcObject = stream;
-        $video.onplay();
+        $video.play();
       })
       .catch((err) => {
-        $video.insertAdjacentElement(
-          "afterend",
-          `<p> <mark>${err}</mark></p> `
-        );
+        $video.insertAdjacentHTML("afterend", `<p><mark>${err}</mark></p> `);
       });
   }
 }
