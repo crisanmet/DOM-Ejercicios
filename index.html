@@ -41,7 +41,7 @@
         <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
         <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
         <a href="#seccion14" data-scroll-spy>Validación de Formularios</a>
-        <a href="#seccion15" data-scroll-spy>Sección 15</a>
+        <a href="#seccion15" data-scroll-spy>Narrador</a>
       </nav>
     </aside>
     <main>
@@ -229,7 +229,19 @@
         </form>
       </section>
       <section id="seccion15" class="seccion" data-scroll-spy>
-        <h2>sección 15</h2>
+        <h2>Narrador</h2>
+        <select id="speech-select">
+          <option value="">---Elige una Voz---</option>
+        </select>
+        <br /><br />
+        <textarea
+          id="speech-text"
+          cols="50"
+          rows="5"
+          placeholder="Ingresa un texto para leerlo..."
+        ></textarea>
+        <br /><br />
+        <button id="speech-btn">Leer texto</button>
       </section>
     </main>
     <button class="scroll-top-btn hidden">&#11014;</button>
